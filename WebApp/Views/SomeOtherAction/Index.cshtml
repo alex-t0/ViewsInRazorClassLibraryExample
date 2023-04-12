@@ -1,0 +1,8 @@
+@using RazorUIClassLib.SomeNamespace
+@model dynamic
+
+Hello from overriden some other action! <br />
+
+@{ var someStringInOverridenView = new SomeClass().GetSomeStringForOverridenView(); }
+
+Some string for overriden view: @someStringInOverridenView

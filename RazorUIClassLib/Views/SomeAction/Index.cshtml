@@ -1,3 +1,8 @@
+@using RazorUIClassLib.SomeNamespace
 @model dynamic
 
-Hello from some action!
+@{ var someString = new SomeClass().GetSomeString(); }
+
+Hello from some action! <br />
+
+String from some class: @someString
